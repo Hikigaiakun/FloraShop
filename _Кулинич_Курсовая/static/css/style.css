@@ -1,0 +1,393 @@
+/* nav menu phone */
+.nav-toggle {
+	display: none;
+	position: relative;
+	float: right;
+	width: 40px;
+	height: 40px;
+	margin-left: 20px;
+	background: #ef5a42;
+	cursor: pointer;
+}
+.nav-toggle span {
+	display: block;
+	position: absolute;
+	top: 19px;
+	left: 8px;
+	right: 8px;
+	height: 2px;
+	background: white;
+}
+.nav-toggle span:before,
+.nav-toggle span:after {
+	content: '';
+	position: absolute;
+	display: block;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: white;
+}
+.nav-toggle span:before {
+	top: -10px;
+}
+.nav-toggle span:after {
+	bottom: -10px;
+}
+/* "Стили используемые на всей странице" */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 25pt;
+	margin-bottom: 40px;
+}
+
+.container {
+	margin: 0 17%;
+}
+
+.flex-con {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex-w {
+	flex-wrap: wrap;
+}
+
+/* "Шапка сайта" */
+.header-bg {
+	background-position-y: top -1000px;
+	background-image: url('../img/bg-header-2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	height: 126px;
+	background-color: #fff;
+}
+
+.info {
+	height: 63px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+#logo-img {
+	width: 50px;
+}
+
+.logo-title {
+	font-weight: 700;
+	font-size: 20pt;
+}
+
+.phone-number {
+	font-weight: 600;
+	font-size: 10pt;
+}
+
+/* "Навигация"*/
+nav {
+	height: 63px;
+}
+
+nav a {
+	color: #000;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14pt;
+}
+
+nav a:hover {
+	color: #597c46;
+}
+
+/* "Начальный вид(картинка и текст)" */
+.header-info {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backdrop-filter: blur(1px);
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 820px;
+	height: 300px;
+}
+
+.title span {
+	font-weight: 400;
+	font-size: 58pt;
+	color: #000;
+}
+
+.title p {
+	font-weight: 400;
+	font-size: 20pt;
+	color: #000;
+	text-align: center;
+}
+
+/* "О нас" */
+.block {
+	margin-top: 50px;
+}
+
+.about-text {
+	font-size: 14pt;
+	line-height: 1.5;
+}
+
+/* "Рассылка" */
+.subscription {
+	background-color: #339a13;
+	margin-top: 100px;
+	color: #fff;
+	border-top: 1px solid #134624;
+	border-bottom: 1px solid #134624;
+}
+
+.title-subscription {
+	font-size: 20px;
+}
+
+.input-subscription {
+	height: 40px;
+	width: 204px;
+	background-color: #339a13;
+	border: 2px solid #fff;
+	padding-left: 5px;
+	color: #fff;
+	margin: 20px 0 20px 10px;
+}
+
+.input-subscription::placeholder {
+	color: #fff;
+	font-size: 18px;
+}
+
+.input-subscription:focus {
+	border: 2px solid #035a39;
+	outline: none;
+}
+
+.subscribe-button {
+	height: 40px;
+	width: 204px;
+	border: none;
+	background-color: #fff;
+	color: #000;
+	padding: 10px 30px;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+.subscribe-button:hover {
+	background-color: #cbfdbf;
+}
+
+/* "Товары" */
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 auto;
+	width: 300px;
+}
+
+.catalog {
+	background-color: #fbfbfb;
+	margin-top: 100px;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+	padding: 50px 0;
+}
+
+.card {
+	height: 500px;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+	border-radius: 25px;
+	width: 30%;
+	margin-bottom: 30px;
+}
+
+.type-catalog {
+	margin-left: 10px;
+	background-color: #0d8f34;
+	display: inline-block;
+	color: #fff;
+	padding: 10px;
+	border-radius: 15px;
+	margin-top: 25px;
+	font-size: 12pt;
+}
+
+.cost {
+	font-size: 15pt;
+	font-weight: 800;
+}
+
+.card p {
+	margin: 0 20px 20px 20px;
+	font-size: 18px;
+	width: 230px;
+}
+
+.card-img {
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+}
+
+.card img {
+	width: 200px;
+	border-radius: 10px;
+}
+
+.move {
+	height: 40px;
+	width: 180px;
+	background-color: #339a13;
+	border: 2px solid #fff;
+	padding-left: 5px;
+	color: #fff;
+	margin: 20px 0 20px 30px;
+	border-radius: 10px;
+	margin-right: 10px;
+	font-size: 18px;
+}
+
+.move:hover {
+	background-color: #20580f;
+}
+
+/* Низ сайта */
+.footer {
+	background: #174f07;
+	padding: 30px 0px;
+	font-family: 'Play', sans-serif;
+	text-align: center;
+}
+
+.footer .row {
+	width: 100%;
+	margin: 1% 0%;
+	padding: 0.6% 0%;
+	color: #adadad;
+	font-size: 0.8em;
+}
+
+.footer .row a {
+	text-decoration: none;
+	color: #adadad;
+	transition: 0.5s;
+}
+
+.footer .row a:hover {
+	color: #fff;
+}
+
+.footer .row ul {
+	width: 100%;
+}
+
+.footer .row ul li {
+	display: inline-block;
+	margin: 0px 30px;
+}
+
+.footer .row a i {
+	font-size: 2em;
+	margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+	.footer {
+		text-align: left;
+		padding: 5%;
+	}
+	.footer .row ul li {
+		display: block;
+		margin: 10px 0px;
+		text-align: left;
+	}
+	.footer .row a i {
+		margin: 0% 3%;
+	}
+}
+
+@media (max-width: 1300px) {
+	.subscription .flex-con {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.subscription .container .flex-con {
+		text-align: center;
+		display: flex;
+		height: 100%;
+		align-items: center;
+		justify-content: space-between;
+		width: 80%;
+		margin-bottom: 20px;
+	}
+
+	.input-subscription {
+		margin: 10px 0px 10px 5px;
+	}
+
+	.title-subscription {
+		font-size: 26px;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.flex-column {
+		padding-bottom: 10px;
+		width: 300px;
+		align-self: center;
+	}
+
+	.card {
+		width: 45%;
+	}
+	.card p {
+		margin-right: 0px;
+	}
+
+	.move {
+		margin: 0;
+		margin-right: 15px;
+	}
+	.card img {
+		width: 230px;
+		border-radius: 10px;
+	}
+}
+
+@media (max-width: 400px) {
+	.nav-toggle {
+		display: block;
+	}
+}
